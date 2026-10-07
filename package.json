@@ -1,0 +1,39 @@
+{
+  "name": "dsh-hide-ego-fab",
+  "icon": "./assets/icon.svg",
+  "version": "0.1.0",
+  "description": "Hides the ego-browser floating watch ball (#dsh-ego-fab) in the DSH web GUI. CSS-only, reversible, ego_* tools untouched.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ego-browser",
+    "css",
+    "hide",
+    "fab"
+  ]
+}
